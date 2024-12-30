@@ -12,6 +12,9 @@ const router = express.Router();
 
 
 //User Registration
+router.get('/',(req,res)=>{
+    res.send("Working fine v.1.9")
+})
 router.post("/register", userRegisteration);
 router.post('/signin',userSignin);
 router.get('/getusername',getUserName);
